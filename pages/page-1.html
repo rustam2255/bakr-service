@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Firma Xizmatlari</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      /* Umumiy sozlamalar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(45deg, #3498db, #e74c3c, #2ecc71);
+    color: #fff;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    animation: fadeIn 2s ease-in;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #ddd;
+    animation: fadeIn 2s ease-in;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Xizmatlar bo'limi */
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.service-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    width: 23%;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    animation: slideIn 1s ease-in-out;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.service-card h3 {
+    color: #FFD700;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1.1em;
+    color: #ddd;
+}
+
+/* Back to home button */
+a.btn-back {
+    background-color: #FF6347;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 40px;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+a.btn-back:hover {
+    background-color: #e74c3c;
+}
+
+/* Animatsiya */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Mobil responsivlik */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2.5em;
+    }
+
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    a.btn-back {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- IT firma xizmatlari bo'limi -->
+    <section class="services">
+        <div class="container">
+            <h2 class="animate__animated animate__fadeIn">IT Firma Xizmatlari</h2>
+            <p class="animate__animated animate__fadeIn animate__delay-1s">Biz sizga yuqori sifatli va innovatsion IT xizmatlarini taqdim etamiz. Har bir loyiha uchun moslashtirilgan yechimlar bilan ishlaymiz, sizning biznesingizni yanada muvaffaqiyatli qilishga yordam beramiz.</p>
+            
+            <div class="service-cards">
+                <div class="service-card animate__animated animate__fadeIn animate__delay-2s">
+                    <h3>Veb Sayt Yaratish</h3>
+                    <p>Biz sizning biznesingiz uchun zamonaviy va mobil moslashuvchan veb saytlar yaratamiz. Saytingizning dizayni jozibali va foydalanuvchi uchun qulay bo‘ladi.</p>
+                </div>
+                <div class="service-card animate__animated animate__fadeIn animate__delay-3s">
+                    <h3>Mobil Ilovalar</h3>
+                    <p>Mobil ilovalar orqali sizning biznesingizni yangi bosqichga olib chiqamiz. IOS va Android platformalarida samarali ilovalar yaratamiz.</p>
+                </div>
+                <div class="service-card animate__animated animate__fadeIn animate__delay-4s">
+                    <h3>SEO va Marketing</h3>
+                    <p>Biz sizning saytni izlash tizimlarida yuqori o‘rinlarga ko‘tarish uchun SEO xizmatlarini taqdim etamiz. Marketing strategiyalari yordamida biznesingizni rivojlantiring.</p>
+                </div>
+                <div class="service-card animate__animated animate__fadeIn animate__delay-5s">
+                    <h3>Texnik Yordam</h3>
+                    <p>Biz sizning kompaniyangiz uchun har doim mavjud texnik yordamni taqdim etamiz. Serverlar, dasturlar va tizimlar bo‘yicha mutaxassislarimiz yordamida har qanday muammoni tezda hal qilamiz.</p>
+                </div>
+            </div>
+
+            <a href="/index.html" class="btn-back animate__animated animate__fadeIn animate__delay-6s">Asosiy sahifaga qaytish</a>
+        </div>
+    </section>
+
+</body>
+</html>
